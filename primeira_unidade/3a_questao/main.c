@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void triploPitagorico(int lados)
 {
@@ -6,7 +7,7 @@ void triploPitagorico(int lados)
     {
         for (int cateto2 = cateto1; cateto2 <= lados; cateto2++)
         {
-            int hipotenusa = cateto1*cateto1 + cateto2*cateto2;
+            double hipotenusa = sqrt(cateto1*cateto1 + cateto2*cateto2);
             int raiz = 0;
             for (int i = 1; i <= lados; i++)
             {
@@ -18,7 +19,7 @@ void triploPitagorico(int lados)
             }
             if (raiz <= lados)
             {
-                printf("(%d, %d, %d)\n", cateto1, cateto2, hipotenusa);
+                printf("(%d, %d, %.1f)\n", cateto1, cateto2, hipotenusa);
             }
         }
     }
