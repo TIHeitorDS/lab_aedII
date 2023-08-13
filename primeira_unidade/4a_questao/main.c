@@ -2,16 +2,16 @@
 
 int isPerfect(int number)
 {
-    int dividend = number - 1;
-    int aux = 0;
-    for (int i = dividend; i >= 1; i--)
+    int sumFactors = 0;
+    int i;
+    for (i = number - 1; i >= 1; i--)
     {
         if (number % i == 0)
         {
-            aux += i;
+            sumFactors += i;
         }
     }
-    if (aux == number)
+    if (sumFactors == number)
     {
         return 1;
     }
