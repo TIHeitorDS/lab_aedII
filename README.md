@@ -1,2 +1,3 @@
 # lab_aedII
-Heitor Claudino Dantas
+
+<b>Discentes:</b> Heitor Claudino Dantas e José Carlos de Sousa

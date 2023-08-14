@@ -15,11 +15,11 @@ int main()
 {
     int dia, mes, ano;
     printf("\nInsira o dia: ");
-    scanf("%i", &dia);
+    scanf("%d", &dia);
     printf("\nInsira o mes: ");
-    scanf("%i", &mes);
+    scanf("%d", &mes);
     printf("\nInsira o ano: ");
-    scanf("%i", &ano);
+    scanf("%d", &ano);
     printf("quantidade de aulas de laboratorio ate o final do semestre: %d\n", diasDeAula(dia, mes, ano));
     return 0;
 }
